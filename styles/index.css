@@ -170,7 +170,7 @@ body {
     font-size: 2rem;
 }
 
-.corner {
+.nav-corner {
     position: absolute;
     bottom: -2px;
     right: -2px;
