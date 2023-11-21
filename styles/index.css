@@ -145,7 +145,148 @@
     height: 100%;
 }
 
+.tp-info {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start ;
+    gap: 1em;
+    flex-direction: column;
+    padding: 4em;
+}
+
 .third-page img {
     object-fit: contain;
     width: 40em;
+}
+
+.fourth-page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    flex-direction: column;
+}
+
+.fourth-page img {
+    width: 40em;
+    object-fit: contain;
+}
+
+.engagement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.left-engagement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.le-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    width: 25em;
+    background-color: #022134;
+    padding: 1.3em;
+}
+
+.fifth-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #181a28;
+}
+
+.fp-title {
+    font-size: 2.3em;
+    margin-top: 1.5em;
+    color: white;
+}
+
+
+.fp-plans {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    gap: 1em;
+}
+
+.fp-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.fp-container img {
+    width: 18em;
+}
+
+.fp-plan-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #121423;
+    width: 18em;
+    padding: 1em 2em 3em 2em;
+}
+
+.fp-plan-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #121423;
+    width: 18em;
+    padding: 1em 2em 2em 2em;
+}
+
+.fp-plan-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #121423;
+    width: 18em;
+    padding: 1em 2em 5em 2em;
+}
+
+.fp-plan-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #121423;
+    width: 18em;
+    padding: 1em 2em 3em 2em;
+}
+
+.plan-set {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.fp-container h1 {
+    font-size: 1.7em;
+    margin-bottom: 0.5em;
+}
+
+.fp-container p {
+    font-size: 0.8em;
 }
