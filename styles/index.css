@@ -7,6 +7,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body {
+    min-height: 100vh;
+}
+
 .landing-page {
     height: 100vh;
     display: flex;
@@ -25,7 +29,6 @@
     gap: 1em;
     
 }
-
 
 
 .lp-right img {
@@ -94,4 +97,83 @@
     color: white;
     display: flex;
     justify-content: center;
+}
+
+
+.side-bar {
+    background: rgb(0,0,0);
+    width: 290px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    overflow-y: auto;
+    transition: 0.5s ease;
+    transition-property: left;
+    z-index: 99;
+}
+
+.side-bar.active {
+    left: 0;
+}
+
+.side-bar .menu {
+    width: 100%;
+    margin-top: 80px;
+}
+
+.side-bar .menu .nav-item {
+    position: relative;
+    cursor: pointer;
+}
+
+.side-bar .menu .nav-item a {
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+    display: block;
+    padding: 5px 10px;
+    line-height: 60px;
+}
+
+.side-bar .menu .nav-item a:hover {
+    background: #8621F8;
+    transition: 0.3 ease;
+}
+
+.side-bar .menu .nav-item i {
+    margin-right: 15px;
+}
+
+.close-btn {
+    position: absolute;
+    color: #fff;
+    font-size: 1.2rem;
+    right: 0;
+    margin: 25px;
+    cursor: pointer;
+}
+
+.menu-btn {
+    position: absolute;
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 25px;
+    cursor: pointer;
+}
+
+.menu-btn > .fa-bars {
+    font-size: 2rem;
+}
+
+.close-btn > .fa-times {
+    font-size: 2rem;
+}
+
+.corner {
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    width: 2rem;
+    height: 2rem;
 }
