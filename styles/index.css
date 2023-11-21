@@ -90,8 +90,62 @@
 
 .second-page {
     height: 100vh;
-    background-color: #131524;
+    background-color: #191923;
     color: white;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.third-page {
+    height: 100vh;
+    background-color: #191b2a;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.category {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #242332;
+    border-radius: 1em;
+    padding: 1em;
+    gap: 1em;
+}
+
+.category h1 {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.category img {
+    width: 11em;
+    height: 7em;
+    object-fit: contain;
+}
+
+.tp-image {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.third-page img {
+    object-fit: contain;
+    width: 40em;
 }
