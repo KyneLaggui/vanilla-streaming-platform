@@ -1,18 +1,26 @@
 @import url('https://fonts.cdnfonts.com/css/poppins');
+@import url('https://fonts.cdnfonts.com/css/ibm-plex-mono-3');
+
+@font-face {
+    font-family: Tungsten;
+    src: url(../assets/Tungsten-Bold.ttf)
+}
 
 *{ 
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    
 }
 
 body {
     min-height: 100vh;
 }
 
+
+
 .landing-page {
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,10 +34,35 @@ body {
     align-items: flex-start;
     flex-direction: column;
     padding: 5em;
-    gap: 1em;
+    gap: 2em;   
+}
+
+.lp-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.lp-titles {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column; 
+}
+
+.lp-left h1 {
+    font-family: Tungsten;
+    text-transform: uppercase;
+    font-size: 8em;
     
 }
 
+.lp-left h3 {
+    /* text-transform: uppercase; */
+    font-size: 1em;
+    font-weight: 400;
+}
 
 .lp-right img {
     width: 50em;
@@ -41,7 +74,7 @@ body {
     text-decoration: none;
     position: relative;
     border: none;
-    font-size: 14px;
+    font-size: 0.9em;
     font-family: inherit;
     color: #fff;
     width: 9em;
@@ -50,7 +83,7 @@ body {
     text-align: center;
     background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
     background-size: 300%;
-    border-radius: 30px;
+    border-radius: 1em;
     z-index: 1;
 }
 
@@ -72,14 +105,14 @@ body {
 .lp-left-button:before {
     content: '';
     position: absolute;
-    top: -5px;
-    left: -5px;
-    right: -5px;
-    bottom: -5px;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
     z-index: -1;
     background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
     background-size: 400%;
-    border-radius: 35px;
+    border-radius: 1em;
     transition: 1s;
 }
   
@@ -101,6 +134,12 @@ body {
     align-items: center;
     flex-direction: column;
     gap: 1em;
+}
+
+.title-sp {
+    font-family: Tungsten;
+    text-transform: uppercase;
+    font-size: 5em;
 }
 
 
@@ -210,8 +249,9 @@ body {
 }
 
 .category h1 {
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: 600;
+    
 }
 
 .category img {
@@ -231,15 +271,50 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start ;
-    gap: 1em;
+    gap: 2em;
     flex-direction: column;
     padding: 4em;
 }
 
-.third-page img {
+.tp-info-title {
+    font-family: Tungsten;
+    font-size: 5em;
+}
+
+.tp-info p {
+    font-size: 0.9em;
+    font-weight: 400;
+}
+
+.tp-features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3em;
+    justify-content: center;
+}
+
+.feature-desc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.feature-desc img {
+    object-fit: contain;
+    width: 3.5em;
+}
+
+.feature-desc h1 {
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+.third-page .About-pic {
     object-fit: contain;
     width: 40em;
 }
+
 
 .fourth-page {
     height: 100vh;
@@ -255,6 +330,8 @@ body {
     width: 40em;
     object-fit: contain;
 }
+
+
 
 .engagement {
     display: flex;
