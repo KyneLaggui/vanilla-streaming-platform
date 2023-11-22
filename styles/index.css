@@ -475,7 +475,8 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #121423;
+    background: rgb(23,33,52);
+    background: radial-gradient(circle, rgba(23,33,52,1) 35%, rgba(18,19,37,1) 93%);
     width: 18em;
     padding: 1em 2em 3em 2em;
 }
@@ -485,7 +486,8 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #121423;
+    background: rgb(23,33,52);
+    background: radial-gradient(circle, rgba(23,33,52,1) 35%, rgba(18,19,37,1) 93%);
     width: 18em;
     padding: 1em 2em 2em 2em;
 }
@@ -495,7 +497,8 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #121423;
+    background: rgb(23,33,52);
+    background: radial-gradient(circle, rgba(23,33,52,1) 35%, rgba(18,19,37,1) 93%);
     width: 18em;
     padding: 1em 2em 5em 2em;
 }
@@ -505,7 +508,8 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #121423;
+    background: rgb(23,33,52);
+    background: radial-gradient(circle, rgba(23,33,52,1) 35%, rgba(18,19,37,1) 93%);
     width: 18em;
     padding: 1em 2em 3em 2em;
 }
