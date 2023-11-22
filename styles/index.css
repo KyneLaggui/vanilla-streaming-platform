@@ -418,6 +418,10 @@ body {
     font-family: Tungsten;
     text-transform: uppercase;
     font-size: 5em;
+    background: #FE85D9;
+    background: linear-gradient(to right, #FE85D9 31%, #1FEAEC 85%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
 }
 
@@ -432,7 +436,7 @@ body {
 .left-engagement {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: f;
     flex-direction: column;
     gap: 2em;
 }
