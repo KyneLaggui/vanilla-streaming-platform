@@ -169,6 +169,7 @@ body {
 }
 
 .second-page {
+    position: relative;
     height: 100vh;
     background-color: #191923;
     color: white;
@@ -501,4 +502,78 @@ body {
 
 .fp-container p {
     font-size: 0.8em;
+}
+
+.second-page .carousel-wrapper {
+    position: relative;
+    /* width: 95%; */
+}
+
+.second-page .carousel {
+    position: relative;
+    font-size: 0px;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.carousel.dragging {
+    cursor: grab;
+    scroll-behavior: auto;
+}
+
+.carousel.dragging img {
+    pointer-events: none;
+}
+
+.carousel img {
+    height: 450px;
+    object-fit: cover;
+    width: calc(100% / 3);
+    /* margin-left: 14px; */
+}
+
+/* .carousel img:first-child{
+    margin-left: 0px;
+} */
+
+.second-page i {
+    top: 50%;
+    height: 46px;
+    width: 46px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    position: absolute;
+    text-align: center;
+    line-height: 46px;
+    background: #fff;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    z-index: 99;
+}
+
+.second-page i:first-child {
+    left: -23px;
+}
+
+.second-page i:last-child {
+    right: -23px;
+}
+
+@media screen and (max-width: 900px) {
+    .carousel img {
+        width: calc(100%/2);
+        height: auto;
+    }
+
+    .carousel-wrapper {
+        padding: 0px 20px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .carousel img {
+        width: 100%;
+    }
 }
