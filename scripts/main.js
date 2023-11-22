@@ -144,6 +144,7 @@ carousel.addEventListener("touchend", dragStop);
 
 
 // Dynamic review feature
+
 const reviewDiv = document.querySelector(".dynamic-review");
 
 
@@ -181,4 +182,5 @@ updateReview();
 setInterval(() => {
     updateReview()
 }, 3000)
+
 
