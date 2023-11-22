@@ -147,8 +147,6 @@ carousel.addEventListener("touchend", dragStop);
 
 const reviewDiv = document.querySelector(".dynamic-review");
 
-
-
 const reviews = [
     {name: "Ace Clavano", review: "The streaming quality in this website is top-notch, all of the resolutions are supported and they are really fast to buffer!"},
     {name: "Amado Nino Rei Punzalan", review: "A lot of good oppurtunities for small streamers are in this website. They certainly don't have discrimination for small streamers like me."},
