@@ -1,7 +1,7 @@
-let menuButton = document.querySelector(".menu-btn");
-let sidebar = document.querySelector(".side-bar");
-let closeButton = document.querySelector(".close-btn");
-let sidebarOptions = document.querySelectorAll(".sidebar-opt");
+const menuButton = document.querySelector(".menu-btn");
+const sidebar = document.querySelector(".side-bar");
+const closeButton = document.querySelector(".close-btn");
+const sidebarOptions = document.querySelectorAll(".sidebar-opt");
 
 menuButton.addEventListener('click', () => {
     sidebar.classList.add('active');
@@ -92,33 +92,17 @@ let isDragStart = false, isDragging = false, prevPageX, prevScrollLeft, position
 
 // Auto slide
 const automaticSlide = () => {
-    
     if (isDragging) return;
-    let firstImgWidth = firstImg.clientWidth; // Getting first img width & adding 14 margin value
+    let firstImgWidth = parseInt(firstImg.clientWidth); // Getting first img width & adding 14 margin value
    // If there is no image left to scroll then return from here
-    if (carousel.scrollLeft == (carousel.scrollWidth - carousel.clientWidth)) {
+    if (Math.ceil(carousel.scrollLeft) >= Math.floor(carousel.scrollWidth - carousel.clientWidth)) {
         carousel.scrollLeft = 0;
-        console.log('okay');
     } else {
-        carousel.scrollLeft += firstImgWidth;
+        carousel.scrollLeft = Math.floor(carousel.scrollLeft) + Math.floor(firstImgWidth);
     }
     
 }
 let autoInterval = setInterval(automaticSlide, 1500);
-
-const autoSlide = () => {
-    positionDiff = Math.abs(positionDiff); // Making positionDiff value to positive
-    let firstImgWidth = firstImg.clientWidth;
-    // Getting difference value that needs to add or reduce from carousel left to take middle img center
-    let valDifference = firstImgWidth - positionDiff;
-
-    if (carousel.scrollLeft > prevScrollLeft) {
-        // If user is scrolling to the right
-        return carousel.scrollLeft += positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
-    }
-    // If user is scrolling to the left
-    carousel.scrollLeft -= positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff
-};
 
 const dragStart = (e) => {
     // Updating global variables value on mouse down event
@@ -144,7 +128,7 @@ const dragStop = () => {
     carousel.classList.remove("dragging");
     if (!isDragging) return;
     isDragging = false;
-    autoSlide();
+    // autoSlide();
 }
 
 
@@ -160,4 +144,43 @@ carousel.addEventListener("touchend", dragStop);
 
 
 // Dynamic review feature
-let reviewDiv = document.querySelector(".dynamic-review");
+
+const reviewDiv = document.querySelector(".dynamic-review");
+
+
+
+const reviews = [
+    {name: "Ace Clavano", review: "The streaming quality in this website is top-notch, all of the resolutions are supported and they are really fast to buffer!"},
+    {name: "Amado Nino Rei Punzalan", review: "A lot of good oppurtunities for small streamers are in this website. They certainly don't have discrimination for small streamers like me."},
+    {name: "John Emmanuel Palijado", review: "This streaming platform is one of a kind! There are so many categories to choose from and all of them are entertaining!"},
+    {name: "Siegfred Lorelle Mina", review: "This streaming platform seamlessly blends an extensive library of content with a user-friendly interface, delivering a top-notch entertainment experience."},
+    {name: "Harold Amad", review: "With a diverse range of captivating originals and a intuitive recommendation system, this streaming platform keeps me hooked for hours on end."}
+]
+
+let currentReview = 0
+const updateReview = () => {
+    reviewDiv.innerHTML = '';
+    const reviewParagraph = document.createElement("p");
+    const reviewHeader = document.createElement("h1");
+    const reviewSpan = document.createElement("span");
+    if (currentReview > reviews.length - 1) {
+        currentReview = 0;
+    }
+    reviewHeader.innerText = reviews[currentReview]['name'];
+    reviewParagraph.innerText = reviews[currentReview]['review'];
+
+    const reviewSpanClone = reviewSpan.cloneNode(true);
+    reviewHeader.appendChild(reviewSpan);
+    reviewHeader.appendChild(reviewSpanClone);
+    reviewHeader.classList.add('glitch')
+    reviewDiv.appendChild(reviewHeader);
+    reviewDiv.appendChild(reviewParagraph);
+    currentReview += 1;
+}
+
+updateReview();
+setInterval(() => {
+    updateReview()
+}, 3000)
+
+
