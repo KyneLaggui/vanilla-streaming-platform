@@ -149,9 +149,9 @@ const reviewDiv = document.querySelector(".dynamic-review");
 
 const reviews = [
     {name: "Ace Clavano", review: "The streaming quality in this website is top-notch, all of the resolutions are supported and they are really fast to buffer!"},
-    {name: "Amado Nino Rei Punzalan", review: "A lot of good oppurtunities for small streamers are in this website. They certainly don't have discrimination for small streamers like me."},
-    {name: "John Emmanuel Palijado", review: "This streaming platform is one of a kind! There are so many categories to choose from and all of them are entertaining!"},
-    {name: "Siegfred Lorelle Mina", review: "This streaming platform seamlessly blends an extensive library of content with a user-friendly interface, delivering a top-notch entertainment experience."},
+    {name: "Rei Punzalan", review: "A lot of good oppurtunities for small streamers are in this website. They certainly don't have discrimination for small streamers like me."},
+    {name: "John Palijado", review: "This streaming platform is one of a kind! There are so many categories to choose from and all of them are entertaining!"},
+    {name: "Siegfred Mina", review: "This streaming platform seamlessly blends an extensive library of content with a user-friendly interface, delivering a top-notch entertainment experience."},
     {name: "Harold Amad", review: "With a diverse range of captivating originals and a intuitive recommendation system, this streaming platform keeps me hooked for hours on end."}
 ]
 
