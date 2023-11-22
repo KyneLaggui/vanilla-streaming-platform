@@ -361,13 +361,14 @@ body {
 
 
 .fourth-page {
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: black;
+    gap: 2  em;
     color: white;
     flex-direction: column;
+    padding: 5em;
 }
 
 .fourth-page img {
@@ -386,7 +387,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1em;
+    gap: 2em;
 }
 
 .left-engagement {
@@ -412,13 +413,13 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 2em;
+    gap: 1em;
     background-color: #181a28;
+    padding: 2em;
 }
 
 .fp-title {
     font-size: 5em;
-    margin-top: 1em;
     font-family: Tungsten;
     text-transform: uppercase;
     color: white;
