@@ -36,6 +36,7 @@ sidebarOptions.forEach((elem) => {
     })
 });
 
+// For detecting the current section
 // List of all sidebar anchor tags
 let homepageAnchor = document.querySelector(".homepage-anchor");
 let exploreAnchor = document.querySelector(".explore-anchor");
@@ -81,6 +82,8 @@ checkScrollStatus();
 window.addEventListener('scroll', () => {
     checkScrollStatus();
 });
+
+// End of section detection
 
 // Carousel scripts
 const carousel = document.querySelector(".carousel");
