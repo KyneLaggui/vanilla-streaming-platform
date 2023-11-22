@@ -16,6 +16,8 @@
 
 body {
     min-height: 100vh;
+    background: rgb(28,16,55);
+    background: linear-gradient(90deg, rgba(28,16,55,1) 42%, rgba(15,9,26,1) 100%);
 }
 
 
@@ -24,8 +26,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
-    color: white;
+    color: #ece8e1;
 }
 
 .lp-left {
@@ -55,7 +56,11 @@ body {
     font-family: Tungsten;
     text-transform: uppercase;
     font-size: 8em;
-    
+    background: #31ADD4;
+    background: linear-gradient(to right, #31ADD4 12%, #8F38E7 74%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
 
 .lp-left h3 {
@@ -140,7 +145,7 @@ body {
 .btn__inner-1 {
     position: relative;
     display: block;
-    padding: 1.2em 11em;
+    padding: 1.2em 10.5em;
     background-color: #622be1;
     overflow: hidden;
     box-shadow: inset 0px 0px 0px 1px transparent;
@@ -171,8 +176,7 @@ body {
 .second-page {
     position: relative;
     height: 100vh;
-    background-color: #191923;
-    color: white;
+    color: #ece8e1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -266,8 +270,7 @@ body {
 
 .third-page {
     height: 100vh;
-    background-color: #191b2a;
-    color: white;
+    color: #ece8e1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -286,8 +289,12 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #242332;
-    border-radius: 1em;
+    background: rgba(188, 169, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(188, 169, 255, 0.3);
     padding: 1em;
     gap: 1em;
 }
@@ -323,6 +330,10 @@ body {
 .tp-info-title {
     font-family: Tungsten;
     font-size: 5em;
+    background: #0DD5E0;
+    background: linear-gradient(to right,  #EC11CD 12%,  #0DD5E0 78%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     
 }
 
@@ -365,9 +376,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
-    gap: 2  em;
-    color: white;
+    gap: 2em;
+    color: #ece8e1;
     flex-direction: column;
     padding: 5em;
 }
@@ -381,6 +391,7 @@ body {
     font-family: Tungsten;
     text-transform: uppercase;
     font-size: 5em;
+
 }
 
 
@@ -405,8 +416,21 @@ body {
     align-items: center;
     gap: 2em;
     width: 25em;
-    background-color: #022134;
+    background: rgba(188, 169, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(188, 169, 255, 0.3);
     padding: 1.3em;
+}
+
+.le-gradient {
+    background: #CF17CF;
+    background: linear-gradient(to right, #CF17CF 12%, #8415CF 93%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
 
 .fifth-page {
@@ -415,7 +439,6 @@ body {
     align-items: center;
     flex-direction: column;
     gap: 1em;
-    background-color: #181a28;
     padding: 2em;
 }
 
