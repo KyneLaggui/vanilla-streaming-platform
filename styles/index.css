@@ -11,6 +11,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+   
     
 }
 
@@ -19,6 +20,7 @@ body {
     background: rgb(28,16,55);
     background: linear-gradient(90deg, rgba(28,16,55,1) 42%, rgba(15,9,26,1) 100%);
     width: 100%;
+    
 }
 
 .home-bg, .engagament-bg {
@@ -71,6 +73,7 @@ body {
     background: linear-gradient(to right, #31ADD4 12%, #8F38E7 74%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    line-height: 0.9;
 
 }
 
@@ -199,6 +202,7 @@ body {
     text-transform: uppercase;
     font-size: 5em;
     text-align: center;
+    line-height: 1;
 }
 
 
@@ -300,6 +304,7 @@ body {
     align-items: center;
     gap: 1em;
     flex-wrap: wrap;
+    padding-inline: 1em;
 }
 
 .category-hover {
@@ -437,6 +442,7 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     word-wrap: break-word;
+    
 }
 
 
@@ -491,7 +497,7 @@ body {
     font-size: 5em;
     font-family: Tungsten;
     text-transform: uppercase;
-    color: white;
+    color: #ece8e1;
 }
 
 
@@ -508,7 +514,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: white;
+    color: #ece8e1;
 }
 
 .fp-container img {
@@ -732,6 +738,7 @@ body {
 
     .tp-info {
         align-items: center;
+        text-align: center;
     }
 
     .landing-page {
@@ -758,6 +765,11 @@ body {
         width: auto;
         max-width: 100%;
     }
+
+    .lp-left, .tp-info {
+        padding: 0 2em 2em 2em;
+    }
+
 }
 
 @media screen and (max-width: 660px) {
@@ -799,8 +811,24 @@ body {
 
     .tp-info-title {
         font-size: 4em;
+        line-height: 1;
     }
 
+    .fourth-p-title {
+        text-align: center;
+        line-height: 1;
+    }
+
+    .fp-title {
+        line-height: 1;
+        text-align: center;
+    }
+
+    .lp-left {
+        align-items: center;
+        text-align: center;
+    }
+    
    
 }
 
