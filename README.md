@@ -34,9 +34,10 @@
 
 ## 🤝 Collaborators
 
-| Name                | GitHub                                    |
-| ------------------- | ----------------------------------------- |
-| Joseph Jason Buhain | [@joseph27](https://github.com/josephh27) |
+| Name                | GitHub                                       |
+| ------------------- | -------------------------------------------- |
+| Kyne Laggui         | [@KyneLaggui](https://github.com/KyneLaggui) |
+| Joseph Jason Buhain | [@joseph27](https://github.com/josephh27)    |
 
 <!-- Add more collaborators if applicable -->
 
